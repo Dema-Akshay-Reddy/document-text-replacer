@@ -769,8 +769,14 @@ app.post('/replace', upload.single('document'), async (req, res) => {
 const uploadsDir = path.join(__dirname, 'uploads');
 fs.mkdir(uploadsDir, { recursive: true }).catch(console.error);
 
-app.listen(port, () => {
-  console.log(`\n✅ Document Text Replacer is running!\n`);
-  console.log(`   Open your browser to: http://localhost:${port}\n`);
-  console.log(`   Press Ctrl+C to stop the server\n`);
-});
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(port, () => {
+    console.log(`\n✅ Document Text Replacer is running!\n`);
+    console.log(`   Open your browser to: http://localhost:${port}\n`);
+    console.log(`   Press Ctrl+C to stop the server\n`);
+  });
+}
+
+// Export for Vercel
+module.exports = app;

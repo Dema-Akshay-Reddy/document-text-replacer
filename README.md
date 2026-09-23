@@ -4,7 +4,7 @@ A simple, powerful web application to replace multiple texts in Word documents a
 
 ## 🚀 Quick Start
 
-**Start the server:**
+**Local Development:**
 ```bash
 npm start
 ```
@@ -12,6 +12,11 @@ npm start
 **Access the application:**
 - Desktop: `http://localhost:3000`
 - Mobile (same WiFi): `http://YOUR_IP:3000`
+
+**Deploy to Vercel:**
+- See `VERCEL_DEPLOY.md` or `deploy-to-vercel.txt`
+- One-click deployment with automatic HTTPS
+- Free hosting with global CDN
 
 ---
 

@@ -1,0 +1,134 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║            🚀 DEPLOY TO VERCEL - QUICK GUIDE                ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+METHOD 1: Via Vercel Website (Easiest - No CLI needed)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Create Vercel Account
+   1. Go to https://vercel.com
+   2. Click "Sign Up"
+   3. Choose "Continue with GitHub"
+   4. Authorize Vercel
+
+STEP 2: Import Project
+   1. Click "Add New..." → "Project"
+   2. Find: document-text-replacer
+   3. Click "Import"
+
+STEP 3: Configure & Deploy
+   Framework Preset: Other
+   Build Command: (leave empty)
+   Output Directory: (leave empty)
+   Install Command: npm install
+   
+   Click "Deploy"
+
+STEP 4: Done!
+   Your app will be live at:
+   https://document-text-replacer.vercel.app
+   (or your custom URL)
+
+
+═══════════════════════════════════════════════════════════════
+
+METHOD 2: Via Vercel CLI (Command Line)
+═══════════════════════════════════════════════════════════════
+
+# Install Vercel CLI
+npm install -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy (preview)
+vercel
+
+# Deploy to production
+vercel --prod
+
+
+═══════════════════════════════════════════════════════════════
+
+IMPORTANT NOTES:
+═══════════════════════════════════════════════════════════════
+
+✅ FREE TIER INCLUDES:
+   • Unlimited projects
+   • Automatic HTTPS
+   • Global CDN
+   • Auto-deploy from GitHub
+   • 100GB bandwidth/month
+
+⚠️ FILE SIZE LIMIT:
+   • Max 4.5MB per upload
+   • Most documents will work fine
+   • Very large files may fail
+
+🔄 AUTO-DEPLOY:
+   • Every push to main → Auto production deploy
+   • Every PR → Preview deploy
+   • No manual deploy needed!
+
+
+═══════════════════════════════════════════════════════════════
+
+BEFORE DEPLOYING:
+═══════════════════════════════════════════════════════════════
+
+Make sure you've pushed to GitHub first:
+
+git add .
+git commit -m "Ready for Vercel deployment"
+git push
+
+
+═══════════════════════════════════════════════════════════════
+
+AFTER DEPLOYING:
+═══════════════════════════════════════════════════════════════
+
+Your app will be accessible at:
+   https://your-project-name.vercel.app
+
+Share this URL with anyone - it's live globally!
+
+
+═══════════════════════════════════════════════════════════════
+
+CUSTOM DOMAIN (Optional):
+═══════════════════════════════════════════════════════════════
+
+1. Go to project → Settings → Domains
+2. Add your domain
+3. Update DNS records as shown
+4. Automatic HTTPS enabled!
+
+
+═══════════════════════════════════════════════════════════════
+
+USEFUL COMMANDS:
+═══════════════════════════════════════════════════════════════
+
+vercel                  # Deploy to preview
+vercel --prod           # Deploy to production
+vercel ls               # List deployments
+vercel logs             # View logs
+vercel open             # Open in browser
+
+
+═══════════════════════════════════════════════════════════════
+
+📖 NEED DETAILED GUIDE?
+═══════════════════════════════════════════════════════════════
+
+Check VERCEL_DEPLOY.md for complete instructions!
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     Ready? Follow Method 1 above - It's super easy! 🚀      ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
