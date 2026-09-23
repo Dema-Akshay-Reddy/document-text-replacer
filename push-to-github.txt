@@ -1,0 +1,83 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║              🚀 PUSH TO GITHUB - QUICK COMMANDS             ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+STEP 1: Create Repository on GitHub
+─────────────────────────────────────
+1. Go to https://github.com
+2. Click "+" → "New repository"
+3. Name: document-text-replacer
+4. Description: Replace multiple texts in Word documents
+5. Choose Public or Private
+6. DO NOT add README, .gitignore, or license
+7. Click "Create repository"
+8. Copy the repository URL
+
+
+STEP 2: Run These Commands (PowerShell)
+─────────────────────────────────────
+
+# Navigate to project folder (if not already there)
+cd c:\Users\aksha\Downloads\converter
+
+# Initialize Git
+git init
+
+# Configure Git (replace with your info)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# Add all files
+git add .
+
+# Check what will be committed
+git status
+
+# Create first commit
+git commit -m "Initial commit: Document Text Replacer application"
+
+# Add your GitHub repository (REPLACE YOUR_USERNAME!)
+git remote add origin https://github.com/YOUR_USERNAME/document-text-replacer.git
+
+# Rename branch to main
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
+
+
+✅ DONE! Your project is now on GitHub!
+
+
+─────────────────────────────────────────────────────────────
+
+FUTURE UPDATES - When You Make Changes:
+─────────────────────────────────────────────────────────────
+
+git add .
+git commit -m "Description of changes"
+git push
+
+
+─────────────────────────────────────────────────────────────
+
+⚠️ IMPORTANT NOTES:
+─────────────────────────────────────────────────────────────
+
+• Replace YOUR_USERNAME with your actual GitHub username
+• node_modules/ will NOT be pushed (excluded by .gitignore)
+• uploads/ folder will be empty on GitHub (temporary files)
+• Anyone can clone and run: npm install → npm start
+
+
+─────────────────────────────────────────────────────────────
+
+📖 Need detailed instructions? Check GIT_SETUP.md
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║        Ready to push? Copy commands above! 🚀                ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝

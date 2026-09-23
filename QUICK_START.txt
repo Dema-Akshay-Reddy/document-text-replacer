@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║           📄 DOCUMENT TEXT REPLACER - QUICK START           ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🚀 START SERVER:
+   
+   npm start
+
+
+🌐 ACCESS APPLICATION:
+
+   Desktop:  http://localhost:3000
+   Mobile:   http://YOUR_IP:3000 (same WiFi)
+
+
+📖 HOW TO USE:
+
+   1. Upload Word document (.docx)
+   2. Enter text to find and replacement
+   3. Click "+ Add Another Replacement" for more
+   4. Click "Replace All & Download"
+   5. Done!
+
+
+💡 FEATURES:
+
+   ✓ Replace multiple texts at once
+   ✓ Unlimited replacement pairs
+   ✓ Mobile-friendly interface
+   ✓ Instant processing
+   ✓ 100% private (runs locally)
+
+
+📱 MOBILE ACCESS:
+
+   1. Run 'ipconfig' to find your IP
+   2. On phone: go to http://YOUR_IP:3000
+   3. Make sure same WiFi network
+
+
+🛑 STOP SERVER:
+
+   Press Ctrl + C
+
+
+📄 SUPPORTED FORMAT:
+
+   ✓ Word documents (.docx)
+   ✗ PDF (convert at ilovepdf.com/pdf_to_word)
+
+
+💡 EXAMPLE:
+
+   Find: {{NAME}}     Replace: John Smith
+   Find: {{COMPANY}}  Replace: Acme Corp
+   Find: {{DATE}}     Replace: Jan 1, 2024
+
+
+📁 FOLDER STRUCTURE:
+
+   converter/
+   ├── server.js         (Main application)
+   ├── package.json      (Dependencies)
+   ├── README.md         (Full documentation)
+   ├── node_modules/     (Libraries)
+   └── uploads/          (Temp files - auto cleanup)
+
+
+❓ NEED HELP?
+
+   Check README.md for detailed documentation
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║              🚀 http://localhost:3000 🚀                     ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
