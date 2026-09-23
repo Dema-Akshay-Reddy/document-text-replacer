@@ -14,7 +14,9 @@ function escapeRegex(string) {
 }
 
 // Configure file upload
-const upload = multer({ dest: 'uploads/' });
+// Use /tmp directory on Vercel (serverless environment)
+const uploadDir = process.env.VERCEL ? '/tmp/uploads' : path.join(__dirname, 'uploads');
+const upload = multer({ dest: uploadDir });
 
 // Serve static files
 app.use(express.static('public'));
@@ -766,7 +768,7 @@ app.post('/replace', upload.single('document'), async (req, res) => {
 });
 
 // Create uploads directory
-const uploadsDir = path.join(__dirname, 'uploads');
+const uploadsDir = process.env.VERCEL ? '/tmp/uploads' : path.join(__dirname, 'uploads');
 fs.mkdir(uploadsDir, { recursive: true }).catch(console.error);
 
 // For local development
